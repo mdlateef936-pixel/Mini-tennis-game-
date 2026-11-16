@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Tennis Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game-container">
+    <h1>🎾 Mini Tennis Game</h1>
+
+    <section class="scoreboard" aria-label="Scoreboard">
+      <div>Computer <span id="computerScore">0</span></div>
+      <div>User <span id="userScore">0</span></div>
+    </section>
+
+    <p id="message" role="status">Press Start Game to play!</p>
+
+    <canvas id="gameCanvas" width="800" height="500">
+      Your browser does not support HTML canvas.
+    </canvas>
+
+    <div class="controls">
+      <button id="startBtn">Start Game</button>
+      <button id="pauseBtn">Pause</button>
+      <button id="resetBtn">Reset</button>
+    </div>
+    <p class="help">Move your paddle with ← → arrow keys or A / D.</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
